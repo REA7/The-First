@@ -6,13 +6,13 @@ using namespace std;
 
 struct Student {
     string name;
-    vector<int> grades;
+    vector<double> grades;
     double average;
 };
 
 void GetStudents(vector<Student>& students);
-void GetGrades(vector<int>& grades);
-double CalculateAverage(const vector<int>& grades);
+void GetGrades(vector<double>& grades);
+double CalculateAverage(const vector<double>& grades);
 int FindTopStudent(const vector<Student>& students);
 int SearchStudent(const vector<Student>& students, const string& name);
 
@@ -61,7 +61,7 @@ void GetStudents(vector<Student>& students) {
     }
 }
 
-void GetGrades(vector<int>& grades) {
+void GetGrades(vector<double>& grades) {
     int num_grades;
     cout << "Enter the number of grades for this student: ";
     cin >> num_grades;
@@ -72,20 +72,20 @@ void GetGrades(vector<int>& grades) {
     }
 
     for (int i = 0; i < num_grades; i++) {
-        int grade;
+        double grade;
         cout << "Enter grade " << i + 1 << " for this student: ";
         cin >> grade;
         grades.push_back(grade);
     }
 }
 
-double CalculateAverage(const vector<int>& grades) {
-    int sum = 0;
-    for (int grade : grades) {
+double CalculateAverage(const vector<double>& grades) {
+    double sum = 0;
+    for (double grade : grades) {
         sum += grade;
     }
 
-    return static_cast<double>(sum) / grades.size();
+    return sum / grades.size();
 }
 
 int FindTopStudent(const vector<Student>& students) {
