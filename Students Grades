@@ -6,13 +6,13 @@ using namespace std;
 
 struct Student {
     string name;
-    vector<double> grades;
-    double average;
+    vector<float> grades;
+    float average;
 };
 
 void GetStudents(vector<Student>& students);
-void GetGrades(vector<double>& grades);
-double CalculateAverage(const vector<double>& grades);
+void GetGrades(vector<float>& grades);
+float CalculateAverage(const vector<float>& grades);
 int FindTopStudent(const vector<Student>& students);
 int SearchStudent(const vector<Student>& students, const string& name);
 
@@ -61,7 +61,7 @@ void GetStudents(vector<Student>& students) {
     }
 }
 
-void GetGrades(vector<double>& grades) {
+void GetGrades(vector<float>& grades) {
     int num_grades;
     cout << "Enter the number of grades for this student: ";
     cin >> num_grades;
@@ -72,16 +72,16 @@ void GetGrades(vector<double>& grades) {
     }
 
     for (int i = 0; i < num_grades; i++) {
-        double grade;
+        float grade;
         cout << "Enter grade " << i + 1 << " for this student: ";
         cin >> grade;
         grades.push_back(grade);
     }
 }
 
-double CalculateAverage(const vector<double>& grades) {
-    double sum = 0;
-    for (double grade : grades) {
+float CalculateAverage(const vector<float>& grades) {
+    float sum = 0;
+    for (float grade : grades) {
         sum += grade;
     }
 
@@ -94,7 +94,7 @@ int FindTopStudent(const vector<Student>& students) {
     }
 
     int top_student_index = 0;
-    double top_average = students[0].average;
+    float top_average = students[0].average;
 
     for (int i = 1; i < students.size(); i++) {
         if (students[i].average > top_average) {
