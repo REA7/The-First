@@ -1,0 +1,89 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Student {
+    string name;
+    float grade1, grade2, grade3, average;
+};
+
+void getStudent(Student& student);
+void getGrades(Student& student);
+float calculateAverage(Student student);
+bool searchStudent(Student students[], int size, string name);
+Student findTopStudent(Student students[], int size);
+
+int main() {
+    const int MAX_STUDENTS = 100;
+    Student students[MAX_STUDENTS];
+    int numStudents = 0;
+
+    while (numStudents < MAX_STUDENTS) {
+        Student student;
+        getStudent(student);
+        students[numStudents] = student;
+        numStudents++;
+
+        char choice;
+        cout << "Do you want to enter another student? (y/n) ";
+        cin >> choice;
+        cin.ignore();
+        if (choice == 'n' || choice == 'N') {
+            break;
+        }
+    }
+
+    string name;
+    cout << "Enter the name of the student you want to search for: ";
+    getline(cin, name);
+    if (searchStudent(students, numStudents, name)) {
+        cout << "Student found." << endl;
+    } else {
+        cout << "Student not found." << endl;
+    }
+
+    Student topStudent = findTopStudent(students, numStudents);
+    if (topStudent.name != "") {
+        cout << "The top student is " << topStudent.name << " with an average grade of " << topStudent.average << endl;
+    } else {
+        cout << "No students in the list." << endl;
+    }
+
+    return 0;
+}
+
+void getStudent(Student& student) {
+    cout << "Enter student name: ";
+    getline(cin, student.name);
+    getGrades(student);
+}
+
+void getGrades(Student& student) {
+    cout << "Enter three grades: ";
+    cin >> student.grade1 >> student.grade2 >> student.grade3;
+    student.average = calculateAverage(student);
+}
+
+float calculateAverage(Student student) {
+    return (student.grade1 + student.grade2 + student.grade3) / 3.0;
+}
+
+bool searchStudent(Student students[], int size, string name) {
+    for (int i = 0; i < size; i++) {
+        if (students[i].name == name) {
+            return true;
+        }
+    }
+    return false;
+}
+
+Student findTopStudent(Student students[], int size) {
+    Student topStudent = {"", 0, 0, 0, 0};
+    for (int i = 0; i < size; i++) {
+        if (students[i].average > topStudent.average) {
+            topStudent = students[i];
+        }
+    }
+    return topStudent;
+}
