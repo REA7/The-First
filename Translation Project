@@ -141,7 +141,7 @@
         <item name="blog.entry.previousEntry"><![CDATA[مقاله قبلی]]></item>
         <item name="blog.entry.publication"><![CDATA[انتشار]]></item>
         <item name="blog.entry.publicationDate"><![CDATA[تاریخ انتشار]]></item>
-        <item name="blog.entry.publicationDate.error.invalid"><![CDATA[The publication date is invalid.]]></item>
+        <item name="blog.entry.publicationDate.error.invalid"><![CDATA[تاریخ انتشار نامعتبر است.]]></item>
         <item name="blog.entry.recentActivity.entry"><![CDATA[Wrote the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
         <item name="blog.entry.recentActivity.entryComment"><![CDATA[Commented on blog article {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
         <item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on blog article {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
@@ -173,9 +173,9 @@
 </ul>]]></item>
     </category>
     <category name="calendar.acp.event">
-        <item name="calendar.acp.event.option.add"><![CDATA[Add Option Field]]></item>
-        <item name="calendar.acp.event.option.availability"><![CDATA[Availability]]></item>
-        <item name="calendar.acp.event.option.categoryIDs"><![CDATA[Categories]]></item>
+        <item name="calendar.acp.event.option.add"><![CDATA[فیلد گزینه را اضافه کنید]]></item>
+        <item name="calendar.acp.event.option.availability"><![CDATA[دسترسی]]></item>
+        <item name="calendar.acp.event.option.categoryIDs"><![CDATA[دسته بندی ها]]></item>
         <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[The option field is only available for events in the selected categories. If no category is selected, the option field is available in all categories. After saving, selected categories cannot be unselected anymore.]]></item>
         <item name="calendar.acp.event.option.edit"><![CDATA[Edit Option Field]]></item>
         <item name="calendar.acp.event.option.list"><![CDATA[Option Fields]]></item>
