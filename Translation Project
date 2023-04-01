@@ -160,16 +160,16 @@
         <item name="blog.entry.unsetAsFeatured"><![CDATA[حذف مقالات انتخاب شده]]></item>
         <item name="blog.entry.userEntries"><![CDATA[مقالات وبلاگ با {$user->username}]]></item>
         <item name="blog.entry.views"><![CDATA[نمایش ها]]></item>
-        <item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# time' other='# times'} read]]></item>
+        <item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# زمان' other='# زمان ها'} read]]></item>
         <item name="blog.entry.watchedEntries"><![CDATA[Watched Blog Articles]]></item>
         <item name="blog.entry.watchedEntries.noEntries"><![CDATA[You are not watching any blog articles at the moment.]]></item>
     </category>
     <category name="blog.index">
         <item name="blog.index.stats"><![CDATA[Statistics]]></item>
         <item name="blog.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{plural value=$stats[authors] one='# Author' other='# Authors'}</li>
-<li>{plural value=$stats[entries] one='# Article' other='# Articles'} ({plural value=$stats[entriesPerDay] one='# Article' other='# Articles'} per Day)</li>
-<li>{plural value=$stats[comments] one='# Comment' other='# Comments'}</li>
+<li>{plural value=$stats[نویسندگان] one='# نویسنده' other='# نویسندگان'}</li>
+<li>{plural value=$stats[ورودی ها] one='# مقاله' other='# مقالات'} ({plural value=$stats[entriesPerDay] one='# Article' other='# Articles'} per Day)</li>
+<li>{plural value=$stats[نظرات] one='# نظر' other='# نظرات'}</li>
 </ul>]]></item>
     </category>
     <category name="calendar.acp.event">
