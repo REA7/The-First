@@ -161,8 +161,8 @@
         <item name="blog.entry.userEntries"><![CDATA[مقالات وبلاگ با {$user->username}]]></item>
         <item name="blog.entry.views"><![CDATA[نمایش ها]]></item>
         <item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# زمان' other='# زمان ها'} read]]></item>
-        <item name="blog.entry.watchedEntries"><![CDATA[Watched Blog Articles]]></item>
-        <item name="blog.entry.watchedEntries.noEntries"><![CDATA[You are not watching any blog articles at the moment.]]></item>
+        <item name="blog.entry.watchedEntries"><![CDATA[مقالات وبلاگ را تماشا کرد]]></item>
+        <item name="blog.entry.watchedEntries.noEntries"><![CDATA[شما در حال حاضر هیچ مقاله وبلاگی را تماشا نمی کنید.]]></item>
     </category>
     <category name="blog.index">
         <item name="blog.index.stats"><![CDATA[Statistics]]></item>
@@ -176,44 +176,44 @@
         <item name="calendar.acp.event.option.add"><![CDATA[فیلد گزینه را اضافه کنید]]></item>
         <item name="calendar.acp.event.option.availability"><![CDATA[دسترسی]]></item>
         <item name="calendar.acp.event.option.categoryIDs"><![CDATA[دسته بندی ها]]></item>
-        <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[The option field is only available for events in the selected categories. If no category is selected, the option field is available in all categories. After saving, selected categories cannot be unselected anymore.]]></item>
-        <item name="calendar.acp.event.option.edit"><![CDATA[Edit Option Field]]></item>
-        <item name="calendar.acp.event.option.list"><![CDATA[Option Fields]]></item>
+        <item name="calendar.acp.event.option.categoryIDs.description"><![CDATA[فیلد گزینه فقط برای رویدادهای دسته های انتخاب شده در دسترس است. اگر هیچ دسته ای انتخاب نشده باشد، فیلد گزینه در همه دسته ها موجود است. پس از ذخیره، دسته های انتخابی دیگر قابل لغو انتخاب نیستند.]]></item>
+        <item name="calendar.acp.event.option.edit"><![CDATA[ویرایش فیلد گزینه]]></item>
+        <item name="calendar.acp.event.option.list"><![CDATA[فیلدهای گزینه]]></item>
     </category>
     <category name="calendar.acp.eventImport">
-        <item name="calendar.acp.eventImport.add"><![CDATA[Add Event Import]]></item>
-        <item name="calendar.acp.eventImport.category.description"><![CDATA[Events will be created in the selected category.]]></item>
-        <item name="calendar.acp.eventImport.description"><![CDATA[External calendars are periodically fetched and new content will be posted as events.]]></item>
-        <item name="calendar.acp.eventImport.edit"><![CDATA[Edit Event Import]]></item>
+        <item name="calendar.acp.eventImport.add"><![CDATA[اضافه کردن رویداد وارد کردن]]></item>
+        <item name="calendar.acp.eventImport.category.description"><![CDATA[رویدادها در دسته انتخابی ایجاد خواهند شد.]]></item>
+        <item name="calendar.acp.eventImport.description"><![CDATA[تقویم های خارجی به صورت دوره ای واکشی می شوند و محتوای جدید به عنوان رویداد پست می شود.]]></item>
+        <item name="calendar.acp.eventImport.edit"><![CDATA[ویرایش واردات رویداد]]></item>
         <item name="calendar.acp.eventImport.error.noCategories"><![CDATA[You must <a href="{link controller='CategoryAdd' application='calendar'}{/link}">create at least one category</a> before you are able to add event imports.]]></item>
-        <item name="calendar.acp.eventImport.errorMessage"><![CDATA[An error occurred during the last run.]]></item>
-        <item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[The following error occurred during the last run:]]></item>
-        <item name="calendar.acp.eventImport.language.description"><![CDATA[Events will be created with the selected language.]]></item>
-        <item name="calendar.acp.eventImport.lastRun"><![CDATA[Last Checked]]></item>
-        <item name="calendar.acp.eventImport.list"><![CDATA[Event Imports]]></item>
+        <item name="calendar.acp.eventImport.errorMessage"><![CDATA[در آخرین اجرا خطایی رخ داد.]]></item>
+        <item name="calendar.acp.eventImport.errorMessage.info"><![CDATA[خطای زیر در آخرین اجرا رخ داد:]]></item>
+        <item name="calendar.acp.eventImport.language.description"><![CDATA[رویدادها با زبان انتخاب شده ایجاد خواهند شد.]]></item>
+        <item name="calendar.acp.eventImport.lastRun"><![CDATA[آخرین بررسی]]></item>
+        <item name="calendar.acp.eventImport.list"><![CDATA[واردات رویداد]]></item>
         <item name="calendar.acp.eventImport.url"><![CDATA[URL]]></item>
-        <item name="calendar.acp.eventImport.url.description"><![CDATA[Enter the event import URL here.]]></item>
-        <item name="calendar.acp.eventImport.username.description"><![CDATA[Events will be created using the entered author.]]></item>
+        <item name="calendar.acp.eventImport.url.description"><![CDATA[Event Import URLرا اینجا وارد کنید]]></item>
+        <item name="calendar.acp.eventImport.username.description"><![CDATA[رویدادها با استفاده از نویسنده وارد شده ایجاد خواهند شد.]]></item>
     </category>
     <category name="calendar.acp.menu">
-        <item name="calendar.acp.menu.link.calendar"><![CDATA[Calendar]]></item>
-        <item name="calendar.acp.menu.link.calendar.category.add"><![CDATA[Add Category]]></item>
-        <item name="calendar.acp.menu.link.calendar.category.list"><![CDATA[Categories]]></item>
-        <item name="calendar.acp.menu.link.calendar.event.option.add"><![CDATA[Add Option Field]]></item>
-        <item name="calendar.acp.menu.link.calendar.event.option.list"><![CDATA[Option Fields]]></item>
+        <item name="calendar.acp.menu.link.calendar"><![CDATA[تقویم]]></item>
+        <item name="calendar.acp.menu.link.calendar.category.add"><![CDATA[اضافه کردن دسته]]></item>
+        <item name="calendar.acp.menu.link.calendar.category.list"><![CDATA[دسته ها]]></item>
+        <item name="calendar.acp.menu.link.calendar.event.option.add"><![CDATA[فیلد گزینه را اضافه کنید]]></item>
+        <item name="calendar.acp.menu.link.calendar.event.option.list"><![CDATA[فیلد های گزینه]]></item>
         <item name="calendar.acp.menu.link.calendar.eventImport.add"><![CDATA[Add Event Import]]></item>
         <item name="calendar.acp.menu.link.calendar.eventImport.list"><![CDATA[Event Imports]]></item>
     </category>
     <category name="calendar.category">
-        <item name="calendar.category.button.export"><![CDATA[Export Events (iCal)]]></item>
-        <item name="calendar.category.delete.sure"><![CDATA[Do you really want to delete this category? All child categories of this category will be moved to this category’s parent category. Events which are only in this category will be deleted.]]></item>
-        <item name="calendar.category.eventColor"><![CDATA[Color]]></item>
-        <item name="calendar.category.eventColor.button.reset"><![CDATA[Reset Color]]></item>
-        <item name="calendar.category.export.download"><![CDATA[Download as File]]></item>
+        <item name="calendar.category.button.export"><![CDATA[خروجی گرفتن رویداد (iCal)]]></item>
+        <item name="calendar.category.delete.sure"><![CDATA[آیا واقعاً می خواهید این دسته را حذف کنید؟ همه دسته‌های فرزند این دسته به دسته والدین این دسته منتقل خواهند شد. رویدادهایی که فقط در این دسته هستند حذف خواهند شد.]]></item>
+        <item name="calendar.category.eventColor"><![CDATA[رنگ]]></item>
+        <item name="calendar.category.eventColor.button.reset"><![CDATA[ریست کردت رنگ]]></item>
+        <item name="calendar.category.export.download"><![CDATA[دانلود به عنوان فایل]]></item>
         <item name="calendar.category.export.url"><![CDATA[URL]]></item>
-        <item name="calendar.category.export.url.description"><![CDATA[You can use this URL to subscribe with your favorite calendar software.]]></item>
-        <item name="calendar.category.export.url.participant"><![CDATA[URL (Participating Events Only)]]></item>
-        <item name="calendar.category.export.url.participant.description"><![CDATA[Restricts list to events that you (may) participate in.]]></item>
+        <item name="calendar.category.export.url.description"><![CDATA[می توانید از این URL برای اشتراک در نرم افزار تقویم مورد علاقه خود استفاده کنید.]]></item>
+        <item name="calendar.category.export.url.participant"><![CDATA[URL (فقط رویدادهای شرکت کننده)]]></item>
+        <item name="calendar.category.export.url.participant.description"><![CDATA[لیست را به رویدادهایی که شما (ممکن است) در آن شرکت کنید محدود می کند.]]></item>
     </category>
     <category name="calendar.date">
         <item name="calendar.date.birthday.count"><![CDATA[{#$day->getBirthdayCount()} birthday{if $day->getBirthdayCount() != 1}s{/if}]]></item>
