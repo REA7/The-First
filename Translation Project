@@ -614,90 +614,90 @@
         <item name="filebase.file.enableComments"><![CDATA[فعال کردن نظرات]]></item>
         <item name="filebase.file.enableComments.description"><![CDATA[به کاربران اجازه می دهد تا در مورد این فایل نظر دهند.]]></item>
         <item name="filebase.file.enableReviews"><![CDATA[Enable reviews]]></item>
-        <item name="filebase.file.enableReviews.description"><![CDATA[Allows users to create reviews on this file.]]></item>
-        <item name="filebase.file.externalURL"><![CDATA[External URL]]></item>
-        <item name="filebase.file.featured"><![CDATA[Featured]]></item>
-        <item name="filebase.file.featuredFiles"><![CDATA[Featured Files]]></item>
-        <item name="filebase.file.file"><![CDATA[File]]></item>
-        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} Comment{if $file->comments != 1}s{/if}]]></item>
-        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} Download{if $file->downloads != 1}s{/if}]]></item>
-        <item name="filebase.file.fileID.error.invalidCommerical"><![CDATA[There is no paid file with the given ID.]]></item>
-        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} Purchase{if $file->purchases != 1}s{/if}]]></item>
-        <item name="filebase.file.files"><![CDATA[Files]]></item>
-        <item name="filebase.file.filterByPrice"><![CDATA[Filter by Price]]></item>
-        <item name="filebase.file.filterByPrice.all"><![CDATA[Both]]></item>
-        <item name="filebase.file.filterByPrice.free"><![CDATA[Free]]></item>
-        <item name="filebase.file.filterByPrice.paid"><![CDATA[Paid]]></item>
-        <item name="filebase.file.hasOldVersions"><![CDATA[Older Versions]]></item>
-        <item name="filebase.file.icon"><![CDATA[Icon]]></item>
-        <item name="filebase.file.icon.delete"><![CDATA[Delete Icon]]></item>
-        <item name="filebase.file.icon.delete.confirmMessage"><![CDATA[Do you really want delete this icon?]]></item>
-        <item name="filebase.file.icon.description"><![CDATA[The icon will be displayed next to the file. The icon’s dimensions must be at least 144×144 pixels.<br>Allowed file extensions: jpg, jpeg, png, webp]]></item>
-        <item name="filebase.file.icon.error.invalidExtension"><![CDATA[The file extension is invalid.]]></item>
-        <item name="filebase.file.icon.error.noImage"><![CDATA[The uploaded file is not an image.]]></item>
-        <item name="filebase.file.icon.error.tooLarge"><![CDATA[The icon is too big.]]></item>
-        <item name="filebase.file.icon.error.tooSmall"><![CDATA[The icon is too small.]]></item>
-        <item name="filebase.file.icon.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="filebase.file.icon.fontAwesome"><![CDATA[FontAwesome Icon]]></item>
-        <item name="filebase.file.icon.none"><![CDATA[Default Icon]]></item>
-        <item name="filebase.file.icon.upload"><![CDATA[Uploaded Icon]]></item>
-        <item name="filebase.file.information"><![CDATA[File Details]]></item>
-        <item name="filebase.file.ipAddress"><![CDATA[IP address]]></item>
-        <item name="filebase.file.isCommercial"><![CDATA[Paid File]]></item>
-        <item name="filebase.file.isCommercial.description"><![CDATA[This file is available for purchase under the following conditions.]]></item>
-        <item name="filebase.file.isDeleted"><![CDATA[Deleted]]></item>
-        <item name="filebase.file.isDisabled"><![CDATA[Disabled]]></item>
-        <item name="filebase.file.isPurchasable"><![CDATA[Up for Sale]]></item>
-        <item name="filebase.file.isPurchasable.description"><![CDATA[Disable this option to temporarily disable the sale of this file. Existing customers will continue to have access.]]></item>
-        <item name="filebase.file.labeledFiles"><![CDATA[Files Assigned with Label “{$label->getTitle()}”]]></item>
-        <item name="filebase.file.lastChangeTime"><![CDATA[Last Change]]></item>
-        <item name="filebase.file.latestFileDownloads"><![CDATA[{@$file->getDownloads()|shortUnit} Download{if $file->getDownloads() != 1}s{/if}]]></item>
-        <item name="filebase.file.latestFilePurchases"><![CDATA[{@$file->getPurchases()|shortUnit} Purchase{if $file->getPurchases() != 1}s{/if}]]></item>
-        <item name="filebase.file.latestUpdates"><![CDATA[Recent Updates]]></item>
-        <item name="filebase.file.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your file <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="filebase.file.like.notification.title"><![CDATA[Reaction to your file]]></item>
-        <item name="filebase.file.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your file]]></item>
-        <item name="filebase.file.message"><![CDATA[Description]]></item>
-        <item name="filebase.file.moderation.disabledFile"><![CDATA[This file will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="filebase.file.moderation.info"><![CDATA[Newly uploaded files will remain inaccessible for others until approved by a moderator.]]></item>
-        <item name="filebase.file.moreFiles"><![CDATA[More Files]]></item>
-        <item name="filebase.file.moreFiles.all"><![CDATA[All Files]]></item>
-        <item name="filebase.file.moreUserFiles"><![CDATA[More Files by {$file->username}]]></item>
-        <item name="filebase.file.mostDownloadedFiles"><![CDATA[Most Downloaded]]></item>
-        <item name="filebase.file.newestFiles"><![CDATA[New]]></item>
-        <item name="filebase.file.noFile"><![CDATA[No File]]></item>
-        <item name="filebase.file.noFile.description"><![CDATA[With this option, you can, for example, provide information via the description and attachments.]]></item>
-        <item name="filebase.file.notPurchasable"><![CDATA[This file is no longer available for purchase.]]></item>
-        <item name="filebase.file.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> added the file <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
-        <item name="filebase.file.notification.mail.plaintext"><![CDATA[{@$author} added the file “{@$file->getTitle()}” [URL:{@$file->getLink()}]:]]></item>
-        <item name="filebase.file.notification.message"><![CDATA[<strong>{$author}</strong> added the file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} enabled your file <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.enableReviews.description"><![CDATA[به کاربران اجازه می دهد تا در مورد این فایل نظر ایجاد کنند.]]></item>
+        <item name="filebase.file.externalURL"><![CDATA[URL خارجی]]></item>
+        <item name="filebase.file.featured"><![CDATA[ویژه]]></item>
+        <item name="filebase.file.featuredFiles"><![CDATA[فایل های ویژه]]></item>
+        <item name="filebase.file.file"><![CDATA[فایل]]></item>
+        <item name="filebase.file.fileComments"><![CDATA[{@$file->comments|shortUnit} نظر{if $file->comments != 1}s{/if}]]></item>
+        <item name="filebase.file.fileDownloads"><![CDATA[{@$file->downloads|shortUnit} دریافت{if $file->downloads != 1}s{/if}]]></item>
+        <item name="filebase.file.fileID.error.invalidCommerical"><![CDATA[هیچ فایل پرداخت شده ای با شناسه داده شده وجود ندارد.]]></item>
+        <item name="filebase.file.filePurchases"><![CDATA[{@$file->purchases|shortUnit} خرید{if $file->purchases != 1}s{/if}]]></item>
+        <item name="filebase.file.files"><![CDATA[فایل ها]]></item>
+        <item name="filebase.file.filterByPrice"><![CDATA[فیلتر با قیمت]]></item>
+        <item name="filebase.file.filterByPrice.all"><![CDATA[هر دو]]></item>
+        <item name="filebase.file.filterByPrice.free"><![CDATA[رایگان]]></item>
+        <item name="filebase.file.filterByPrice.paid"><![CDATA[پرداخت شده]]></item>
+        <item name="filebase.file.hasOldVersions"><![CDATA[ورژن قدیمی]]></item>
+        <item name="filebase.file.icon"><![CDATA[نماد]]></item>
+        <item name="filebase.file.icon.delete"><![CDATA[حذف نماد]]></item>
+        <item name="filebase.file.icon.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این نماد را حذف کنید؟]]></item>
+        <item name="filebase.file.icon.description"><![CDATA[نماد در کنار فایل نمایش داده می شود. ابعاد نماد باید حداقل 144×144 پیکسل باشد.<br>پسوندهای مجاز فایل: jpg، jpeg، png، webp]]></item>
+        <item name="filebase.file.icon.error.invalidExtension"><![CDATA[پسوند فایل نامعتبر است.]]></item>
+        <item name="filebase.file.icon.error.noImage"><![CDATA[فایل آپلود شده یک تصویر نیست.]]></item>
+        <item name="filebase.file.icon.error.tooLarge"><![CDATA[نماد خیلی بزرگ است.]]></item>
+        <item name="filebase.file.icon.error.tooSmall"><![CDATA[نماد خیلی کوچک است.]]></item>
+        <item name="filebase.file.icon.error.uploadFailed"><![CDATA[یک خطای ناشناخته در حین آنماد FontAwesomeلود روی داد.]]></item>
+        <item name="filebase.file.icon.fontAwesome"><![CDATA[نماد FontAwesome]]></item>
+        <item name="filebase.file.icon.none"><![CDATA[ نماد پیشفرض]]></item>
+        <item name="filebase.file.icon.upload"><![CDATA[نماد آپلود شده]]></item>
+        <item name="filebase.file.information"><![CDATA[جزئیات فایل]]></item>
+        <item name="filebase.file.ipAddress"><![CDATA[آدرس آی پی]]></item>
+        <item name="filebase.file.isCommercial"><![CDATA[فایل پرداخت شده]]></item>
+        <item name="filebase.file.isCommercial.description"><![CDATA[این فایل با شرایط زیر قابل خرید می باشد.]]></item>
+        <item name="filebase.file.isDeleted"><![CDATA[حذف شده]]></item>
+        <item name="filebase.file.isDisabled"><![CDATA[غیر فعال شده]]></item>
+        <item name="filebase.file.isPurchasable"><![CDATA[برای فروش]]></item>
+        <item name="filebase.file.isPurchasable.description"><![CDATA[برای غیرفعال کردن موقت فروش این فایل، این گزینه را غیرفعال کنید. مشتریان موجود همچنان دسترسی خواهند داشت.]]></item>
+        <item name="filebase.file.labeledFiles"><![CDATA[فایل های اختصاص داده شده با برچسب “{$label->getTitle()}”]]></item>
+        <item name="filebase.file.lastChangeTime"><![CDATA[اخرین تغییر]]></item>
+        <item name="filebase.file.latestFileDownloads"><![CDATA[{@$file->getDownloads()|shortUnit} دریافت{if $file->getDownloads() != 1}s{/if}]]></item>
+        <item name="filebase.file.latestFilePurchases"><![CDATA[{@$file->getPurchases()|shortUnit} خرید{if $file->getPurchases() != 1}s{/if}]]></item>
+        <item name="filebase.file.latestUpdates"><![CDATA[به روز رسانی های اخیر]]></item>
+        <item name="filebase.file.like.notification.message"><![CDATA[<strong>{$author}</strong> به پرونده شما واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} به پرونده شما واکنش نشان داد <strong>{$file->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="filebase.file.like.notification.title"><![CDATA[واکنش به فایل شما]]></item>
+        <item name="filebase.file.like.notification.title.stacked"><![CDATA[{#$count} کاربران به فایل شما واکنش نشان دادند]]></item>
+        <item name="filebase.file.message"><![CDATA[شرح]]></item>
+        <item name="filebase.file.moderation.disabledFile"><![CDATA[این فایل تا زمانی که توسط ناظر تایید نشود، برای دیگران غیرقابل دسترسی خواهد بود.]]></item>
+        <item name="filebase.file.moderation.info"><![CDATA[فایل‌هایی که به تازگی آپلود شده‌اند، تا زمانی که توسط ناظر تأیید نشوند، برای دیگران غیرقابل دسترسی خواهند بود.]]></item>
+        <item name="filebase.file.moreFiles"><![CDATA[فایل های دیگر]]></item>
+        <item name="filebase.file.moreFiles.all"><![CDATA[همه فایل ها]]></item>
+        <item name="filebase.file.moreUserFiles"><![CDATAفایل های دیگر با {$file->username}]]></item>
+        <item name="filebase.file.mostDownloadedFiles"><![CDATA[Mبیشترین دانلود شده]]></item>
+        <item name="filebase.file.newestFiles"><![CDATA[جدید]]></item>
+        <item name="filebase.file.noFile"><![CDATA[هیچ فایل]]></item>
+        <item name="filebase.file.noFile.description"><![CDATA[با این گزینه می توانید برای مثال اطلاعاتی را از طریق توضیحات و ضمیمه ها ارائه دهید.]]></item>
+        <item name="filebase.file.notPurchasable"><![CDATA[این فایل دیگر برای خرید در دسترس نیست.]]></item>
+        <item name="filebase.file.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> فایل را اضافه کرد <a href="{$file->getLink()}">{$file->getTitle()}</a>:</p>]]></item>
+        <item name="filebase.file.notification.mail.plaintext"><![CDATA[{@$author} فایل را اضافه کرد “{@$file->getTitle()}” [URL:{@$file->getLink()}]:]]></item>
+        <item name="filebase.file.notification.message"><![CDATA[<strong>{$author}</strong> فایل را اضافه کرد <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.notification.moderation.enable.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مادریتور{/if} فایل شما را فعال کرد <strong>{$file->getTitle()}</strong>.]]></item>
         <item name="filebase.file.notification.moderation.enable.notification.title"><![CDATA[Your file has been enabled]]></item>
-        <item name="filebase.file.notification.moderation.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} has {if $wasRemoved}removed{else}added{/if} the label {@$label->render()} {if $wasRemoved}from{else}to{/if} your file <strong>{$file->getTitle()}</strong>.]]></item>
-        <item name="filebase.file.notification.moderation.setLabel.notification.title"><![CDATA[A label has been added to your file]]></item>
-        <item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}A moderator{/if} trashed your file <strong>{$file->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->reason|empty} for the reason “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}]]></item>
-        <item name="filebase.file.notification.moderation.trash.notification.title"><![CDATA[Your file has been trashed]]></item>
-        <item name="filebase.file.notification.title"><![CDATA[New File]]></item>
-        <item name="filebase.file.option.error.validationFailed"><![CDATA[The entered value is invalid.]]></item>
-        <item name="filebase.file.options"><![CDATA[Additional Information]]></item>
-        <item name="filebase.file.overview"><![CDATA[Overview]]></item>
-        <item name="filebase.file.price"><![CDATA[Price]]></item>
-        <item name="filebase.file.price.error.invalid"><![CDATA[The entered price is invalid.]]></item>
-        <item name="filebase.file.purchase"><![CDATA[Purchase]]></item>
-        <item name="filebase.file.purchase.returnMessage"><![CDATA[Thank you for your payment, the transaction has been completed. Access to the purchased file is granted as soon as the payment has been processed by us.]]></item>
-        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}You have purchased this file {#$customerList->getObjects()|count}×, last time {@$customerList->current()->purchaseDate|date}.{else}You have purchased this file on {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
-        <item name="filebase.file.purchased"><![CDATA[Purchased{if $file->getNumberOfPurchases() > 1} ({#$file->getNumberOfPurchases()}×){/if}]]></item>
-        <item name="filebase.file.purchasedFiles"><![CDATA[Purchased Files]]></item>
-        <item name="filebase.file.purchases"><![CDATA[Purchases]]></item>
-        <item name="filebase.file.random"><![CDATA[Random]]></item>
-        <item name="filebase.file.recentActivity.file"><![CDATA[Added the {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}file {anchor object=$file class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.recentActivity.fileComment"><![CDATA[Commented on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.likedFile"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
-        <item name="filebase.file.recentActivity.likedReview"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the review <a href="{$review->getLink()}">{$review->getTitle()}</a> for the file {if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.recentActivity.version"><![CDATA[Added {if $version->versionNumber}the version {$version->versionNumber}{else}a new version{/if} of the file {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
-        <item name="filebase.file.searchFiles"><![CDATA[Search Files]]></item>
+        <item name="filebase.file.notification.moderation.setLabel.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مادریتور{/if} دارد {if $wasRemoved}حذف کرد{else}اضافه کرد{/if} نماد را {@$label->render()} {if $wasRemoved}از{else}to{/if} فایل شما <strong>{$file->getTitle()}</strong>.]]></item>
+        <item name="filebase.file.notification.moderation.setLabel.notification.title"><![CDATA[یک برچسب به فایل شما اضافه شده است]]></item>
+        <item name="filebase.file.notification.moderation.trash.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}یک مادریتور{/if} فایل شما را دور انداخت <strong>{$file->getTitle()}</strong>{if !$userNotificationObject->getDecoratedObject()->reason|empty} for the reason “{$userNotificationObject->getDecoratedObject()->__get('reason')|truncate:255:'…'}”{/if}]]></item>
+        <item name="filebase.file.notification.moderation.trash.notification.title"><![CDATA[فایل شما دور انداخته شده]]></item>
+        <item name="filebase.file.notification.title"><![CDATA[فایل جدید]]></item>
+        <item name="filebase.file.option.error.validationFailed"><![CDATA[مقدار وارد شده نامعتبر است.]]></item>
+        <item name="filebase.file.options"><![CDATA[اطلاعات تکمیلی]]></item>
+        <item name="filebase.file.overview"><![CDATA[بررسی اجمالی]]></item>
+        <item name="filebase.file.price"><![CDATA[قیمت]]></item>
+        <item name="filebase.file.price.error.invalid"><![CDATA[قیمت وارد شده نامعتبر است.]]></item>
+        <item name="filebase.file.purchase"><![CDATA[خرید]]></item>
+        <item name="filebase.file.purchase.returnMessage"><![CDATA[Tاز پرداخت شما متشکرم، خرید انجام شد. دسترسی به فایل خریداری شده به محض انجام پرداخت توسط ما امکان پذیر است.]]></item>
+        <item name="filebase.file.purchaseInfo"><![CDATA[{if $customerList->getObjects()|count > 1}شما این فایل را خریداری کرده اید {#$customerList->getObjects()|count}×, last time {@$customerList->current()->purchaseDate|date}.{else}شما این فایل را خریداری کرده اید {@$customerList->current()->purchaseDate|date}.{/if}]]></item>
+        <item name="filebase.file.purchased"><![CDATA[حریداری شده{if $file->getNumberOfPurchases() > 1} ({#$file->getNumberOfPurchases()}×){/if}]]></item>
+        <item name="filebase.file.purchasedFiles"><![CDATA[فایل های خریداری شده]]></item>
+        <item name="filebase.file.purchases"><![CDATA[خرید ها]]></item>
+        <item name="filebase.file.random"><![CDATA[تصادفی]]></item>
+        <item name="filebase.file.recentActivity.file"><![CDATA[اضافه شده است {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}file {anchor object=$file class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.recentActivity.fileComment"><![CDATA[در مورد فایل نظر داد {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.fileCommentResponse"><![CDATA[پاسخ داد به یک نظر توسط {user object=$commentAuthor} درباره فابل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}#comments/comment{@$commentID}/response{@$responseID}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.likedFile"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$file->getLink()}" class="filebaseFileLink" data-object-id="{@$file->fileID}">{$file->getTitle()}</a>.]]></item>
+        <item name="filebase.file.recentActivity.likedReview"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> به بررسی <a href="{$review->getLink()}">{$review->getTitle()}</a> برای فایل{if $review->getViewableFile()->hasLabels()}<ul class="labelList">{foreach from=$review->getViewableFile()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$review->getViewableFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.recentActivity.version"><![CDATA[اضافه کرد {if $version->versionNumber}نسخه {$version->versionNumber}{else}یک نسخه جدید{/if} از فایل {if $file->hasLabels()}<ul class="labelList">{foreach from=$file->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$version->getFile() class='filebaseFileLink'}.]]></item>
+        <item name="filebase.file.searchFiles"><![CDATA[جستجو فایل ها]]></item>
         <item name="filebase.file.size"><![CDATA[File Size]]></item>
         <item name="filebase.file.subscribed"><![CDATA[Watched File]]></item>
         <item name="filebase.file.supportThread.boardID"><![CDATA[Forum]]></item>
