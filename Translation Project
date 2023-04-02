@@ -134,18 +134,18 @@
         <item name="blog.entry.moreEntries"><![CDATA[مقالات بیشتر]]></item>
         <item name="blog.entry.nextEntry"><![CDATA[مقاله بیشتر]]></item>
         <item name="blog.entry.noEntries"><![CDATA[هنوز هیچ مقاله ای ثبت نشده است.]]></item>
-        <item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> wrote the blog article <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
-        <item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} wrote the blog article “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
-        <item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> wrote the blog article <strong>{$entry->getTitle()}</strong>.]]></item>
+        <item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> مقاله وبلاگ را نوشت <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
+        <item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} مقاله وبلاگ را نوشت “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
+        <item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> مقاله وبلاگ را نوشت <strong>{$entry->getTitle()}</strong>.]]></item>
         <item name="blog.entry.notification.title"><![CDATA[مقاله جدید]]></item>
         <item name="blog.entry.previousEntry"><![CDATA[مقاله قبلی]]></item>
         <item name="blog.entry.publication"><![CDATA[انتشار]]></item>
         <item name="blog.entry.publicationDate"><![CDATA[تاریخ انتشار]]></item>
         <item name="blog.entry.publicationDate.error.invalid"><![CDATA[تاریخ انتشار نامعتبر است.]]></item>
-        <item name="blog.entry.recentActivity.entry"><![CDATA[Wrote the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.entryComment"><![CDATA[Commented on blog article {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on blog article {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
-        <item name="blog.entry.recentActivity.likedEntry"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.entry"><![CDATA[مقاله وبلاگ را نوشت {anchor object=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.entryComment"><![CDATA[در مورد مقاله وبلاگ نظر داد {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[به یک نظر توسط {user object=$commentAuthor} on blog article {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
+        <item name="blog.entry.recentActivity.likedEntry"><![CDATA[واکنش نشان داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the blog article {anchor object=$entry class='blogEntryLink'}.]]></item>
         <item name="blog.entry.restore"><![CDATA[بازیابی]]></item>
         <item name="blog.entry.setAsFeatured"><![CDATA[انتخاب به عنوان گزینه دار]]></item>
         <item name="blog.entry.sortField.comments"><![CDATA[نظرات]]></item>
@@ -421,87 +421,87 @@
         <item name="calendar.event.map"><![CDATA[موقعیت مکانی]]></item>
         <item name="calendar.event.message"><![CDATA[شرح]]></item>
         <item name="calendar.event.moderation.info"><![CDATA[رویدادهای ایجاد شده جدید تا زمانی که توسط ناظر تأیید نشود، غیرقابل دسترسی خواهند بود.]]></item>
-        <item name="calendar.event.moderation.redirect"><![CDATA[Your event has been created and will be displayed once approved.]]></item>
-        <item name="calendar.event.monthlyView"><![CDATA[Month View]]></item>
-        <item name="calendar.event.noParticipants"><![CDATA[Non-Participants]]></item>
-        <item name="calendar.event.noParticipants.description"><![CDATA[These users are definitely not participating:]]></item>
-        <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> created the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} created the event “{@$eventDate->getTitle()}” ({$eventDate->getFormattedTimeFrame()}) [URL:{@$eventDate->getLink()}]:]]></item>
-        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> created the event <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.notification.title"><![CDATA[New Event]]></item>
-        <item name="calendar.event.options"><![CDATA[Additional Information]]></item>
-        <item name="calendar.event.participant.count"><![CDATA[{#$participants} People]]></item>
-        <item name="calendar.event.participants"><![CDATA[Participants]]></item>
-        <item name="calendar.event.participants.description"><![CDATA[These users have confirmed their participation:]]></item>
-        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[yes]} participant{if $calendarEventDateParticipation[yes] != 1}s{/if}, {#$calendarEventDateParticipation[maybe]} undecided and {#$calendarEventDateParticipation[no]} do{if $calendarEventDateParticipation[no] == 1}es{/if} not participate]]></item>
-        <item name="calendar.event.participation"><![CDATA[Participation]]></item>
-        <item name="calendar.event.participation.description"><![CDATA[Allows users to participate in this event.]]></item>
-        <item name="calendar.event.participation.enable"><![CDATA[Enable Participation]]></item>
-        <item name="calendar.event.participation.endTime"><![CDATA[Closing Date]]></item>
-        <item name="calendar.event.participation.endTime.expired"><![CDATA[The closing date for this event has passed.]]></item>
-        <item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}Closing date {$eventDate->getParticipationEndTime()|dateDiff|lcfirst}{else}Closing date has passed{/if}]]></item>
+        <item name="calendar.event.moderation.redirect"><![CDATA[رویداد شما ایجاد شده است و پس از تایید نمایش داده خواهد شد.]]></item>
+        <item name="calendar.event.monthlyView"><![CDATA[نمای ماه]]></item>
+        <item name="calendar.event.noParticipants"><![CDATA[افراد غیر شرکت کننده]]></item>
+        <item name="calendar.event.noParticipants.description"><![CDATA[این کاربران قطعا شرکت نمی کنند:]]></item>
+        <item name="calendar.event.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> رویداد را ایجاد کرد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.notification.mail.plaintext"><![CDATA[{@$author} رویداد را ایجاد کرد “{@$eventDate->getTitle()}” ({$eventDate->getFormattedTimeFrame()}) [URL:{@$eventDate->getLink()}]:]]></item>
+        <item name="calendar.event.notification.message"><![CDATA[<strong>{$author}</strong> رویداد را ایجاد کرد <strong>{$event->subject}</strong> ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.notification.title"><![CDATA[رویداد جدید]]></item>
+        <item name="calendar.event.options"><![CDATA[اطلاعات تکمیلی]]></item>
+        <item name="calendar.event.participant.count"><![CDATA[{#$participants} مردم]]></item>
+        <item name="calendar.event.participants"><![CDATA[شرکت کنندگان]]></item>
+        <item name="calendar.event.participants.description"><![CDATA[این کاربران مشارکت خود را تایید کرده اند:]]></item>
+        <item name="calendar.event.participants.summary"><![CDATA[{#$calendarEventDateParticipation[yes]} شرکت کنندگان{if $calendarEventDateParticipation[yes] != 1}s{/if}, {#$calendarEventDateParticipation[maybe]} بلاتکلیف و {#$calendarEventDateParticipation[no]} do{if $calendarEventDateParticipation[no] == 1}es{/if} not participate]]></item>
+        <item name="calendar.event.participation"><![CDATA[شرکت کنندگان]]></item>
+        <item name="calendar.event.participation.description"><![CDATA[به کاربران اجازه می دهد در این رویداد شرکت کنند.]]></item>
+        <item name="calendar.event.participation.enable"><![CDATA[مشارکت را فعال کنید]]></item>
+        <item name="calendar.event.participation.endTime"><![CDATA[تاریخ بسته شدن]]></item>
+        <item name="calendar.event.participation.endTime.expired"><![CDATA[تاریخ پایانی این رویداد به پایان رسیده است.]]></item>
+        <item name="calendar.event.participation.endTime.info"><![CDATA[{if $eventDate->getParticipationEndTime() > TIME_NOW}تاریخ بسته شدن {$eventDate->getParticipationEndTime()|dateDiff|lcfirst}{else}Closing date has passed{/if}]]></item>
         <item name="calendar.event.participation.endTime.value"><![CDATA[{@$eventDate->getParticipationEndTime()|plainTime}{if $eventDate->getParticipationEndTime() < TIME_NOW}<br>(Expired){/if}]]></item>
-        <item name="calendar.event.participation.inviteOnly"><![CDATA[Invitation only]]></item>
-        <item name="calendar.event.participation.inviteOnly.description"><![CDATA[Only users invited to this event can participate in this event.]]></item>
-        <item name="calendar.event.participation.isChangeable"><![CDATA[Participants can change their decision]]></item>
-        <item name="calendar.event.participation.isChangeable.description"><![CDATA[The participants can change their decision at any time.]]></item>
-        <item name="calendar.event.participation.isPublic"><![CDATA[Public list of participants]]></item>
-        <item name="calendar.event.participation.isPublic.description"><![CDATA[The list of participants will be visible for everyone.]]></item>
-        <item name="calendar.event.participation.maxCompanions"><![CDATA[Maximum Companions]]></item>
-        <item name="calendar.event.participation.maxCompanions.description"><![CDATA[The maximum number of companions allowed per participant.]]></item>
-        <item name="calendar.event.participation.maxParticipants"><![CDATA[Maximum Participants]]></item>
-        <item name="calendar.event.participation.maxParticipants.description"><![CDATA[The maximum number of participants. Use 0 for infinite.]]></item>
-        <item name="calendar.event.participation.maxParticipants.info"><![CDATA[Only {$eventDate->getEvent()->maxParticipants - $eventDate->participants} seat{if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}s{/if} left]]></item>
-        <item name="calendar.event.pastEvents"><![CDATA[Past Events]]></item>
-        <item name="calendar.event.preset"><![CDATA[The event <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> is being used as a preset, the fields below have been pre-populated.]]></item>
-        <item name="calendar.event.recentActivity.event"><![CDATA[Created the event {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'} ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.recentActivity.eventDateComment"><![CDATA[Commented on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-        <item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[Replied to a comment by {user object=$commentAuthor} on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
-        <item name="calendar.event.recentActivity.likedEvent"><![CDATA[Reacted with <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the event {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
-        <item name="calendar.event.restore"><![CDATA[Restore]]></item>
-        <item name="calendar.event.searchEvents"><![CDATA[Search Events]]></item>
-        <item name="calendar.event.setAsFeatured"><![CDATA[Mark as Featured]]></item>
-        <item name="calendar.event.sortField.comments"><![CDATA[Comments]]></item>
-        <item name="calendar.event.sortField.cumulativeLikes"><![CDATA[Reactions]]></item>
-        <item name="calendar.event.sortField.startTime"><![CDATA[Date]]></item>
-        <item name="calendar.event.sortField.subject"><![CDATA[Title]]></item>
-        <item name="calendar.event.sortField.views"><![CDATA[Views]]></item>
-        <item name="calendar.event.trash"><![CDATA[Move to Trash]]></item>
-        <item name="calendar.event.trash.confirmMessage"><![CDATA[Do you really want to move this event and all of its repetitions to the trash?]]></item>
-        <item name="calendar.event.trash.reason"><![CDATA[Reason (optional)]]></item>
-        <item name="calendar.event.undecidedParticipants"><![CDATA[Undecided Participants]]></item>
-        <item name="calendar.event.undecidedParticipants.description"><![CDATA[These users have not made a definite decision yet:]]></item>
-        <item name="calendar.event.unsetAsFeatured"><![CDATA[Remove Featured Marking]]></item>
-        <item name="calendar.event.upcomingEvents"><![CDATA[Upcoming Events]]></item>
-        <item name="calendar.event.useAsPreset"><![CDATA[Use as Preset]]></item>
-        <item name="calendar.event.userEvents"><![CDATA[Events by {$user->username}]]></item>
-        <item name="calendar.event.weeklyView"><![CDATA[Week View]]></item>
-        <item name="calendar.event.yearlyView"><![CDATA[Year View]]></item>
+        <item name="calendar.event.participation.inviteOnly"><![CDATA[فقط دعوتنامه]]></item>
+        <item name="calendar.event.participation.inviteOnly.description"><![CDATA[فقط کاربران دعوت شده به این رویداد می توانند در این رویداد شرکت کنند.]]></item>
+        <item name="calendar.event.participation.isChangeable"><![CDATA[شرکت کنندگان می توانند تصمیم خود را تغییر دهند]]></item>
+        <item name="calendar.event.participation.isChangeable.description"><![CDATA[Tشرکت کنندگان می توانند تصمیم خود را در هر زمان تغییر دهند.]]></item>
+        <item name="calendar.event.participation.isPublic"><![CDATA[لیست عمومی شرکت کنندگان]]></item>
+        <item name="calendar.event.participation.isPublic.description"><![CDATA[لیست شرکت کنندگان برای همه قابل مشاهده خواهد بود.]]></item>
+        <item name="calendar.event.participation.maxCompanions"><![CDATA[Mحداکثر همراهان]]></item>
+        <item name="calendar.event.participation.maxCompanions.description"><![CDATA[حداکثر تعداد همراهان مجاز برای هر شرکت کننده.]]></item>
+        <item name="calendar.event.participation.maxParticipants"><![CDATA[حداکثر شرکت کنندگان]]></item>
+        <item name="calendar.event.participation.maxParticipants.description"><![CDATA[حداکثر تعداد شرکت کنندگان از 0 برای بی نهایت استفاده کنید.]]></item>
+        <item name="calendar.event.participation.maxParticipants.info"><![CDATA[فقط {$eventDate->getEvent()->maxParticipants - $eventDate->participants} بشین{if $eventDate->getEvent()->maxParticipants - $eventDate->participants > 1}s{/if} left]]></item>
+        <item name="calendar.event.pastEvents"><![CDATA[رویدادهای گذشته]]></item>
+        <item name="calendar.event.preset"><![CDATA[رویداد <a href="{link application='calendar' controller='Event' object=$presetEvent->getFirstEventDate()}{/link}">{$presetEvent->getTitle()}</a> به عنوان یک پیش تنظیم استفاده می شود، فیلدهای زیر از قبل پر شده اند.]]></item>
+        <item name="calendar.event.recentActivity.event"><![CDATA[رویداد را ایجاد کرد {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'} ({$event->getFirstEventDate()->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.recentActivity.eventDateComment"><![CDATA[در مورد این رویداد اظهار نظر کرد {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+        <item name="calendar.event.recentActivity.eventDateCommentResponse"><![CDATA[به یک نظر توسط {user object=$commentAuthor} on the event {if $eventDate->getEvent()->hasLabels()}<ul class="labelList">{foreach from=$eventDate->getEvent()->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$eventDate->getLink()}#comment{@$commentID}/response{@$responseID}" class="calendarEventLink" data-object-id="{@$eventDate->eventDateID}">{$eventDate->getTitle()}</a>.]]></item>
+        <item name="calendar.event.recentActivity.likedEvent"><![CDATA[واکنش داد با <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> to the event {if $event->hasLabels()}<ul class="labelList">{foreach from=$event->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}{anchor object=$event->getFirstEventDate() class='calendarEventLink'}.]]></item>
+        <item name="calendar.event.restore"><![CDATA[بازیابی]]></item>
+        <item name="calendar.event.searchEvents"><![CDATA[جستجو رویداد ها]]></item>
+        <item name="calendar.event.setAsFeatured"><![CDATA[علامت گذاری به عنوان ویژه]]></item>
+        <item name="calendar.event.sortField.comments"><![CDATA[نظرات]]></item>
+        <item name="calendar.event.sortField.cumulativeLikes"><![CDATA[واکنش ها]]></item>
+        <item name="calendar.event.sortField.startTime"><![CDATA[تاریخ]]></item>
+        <item name="calendar.event.sortField.subject"><![CDATA[عنوان]]></item>
+        <item name="calendar.event.sortField.views"><![CDATA[بازدید ها]]></item>
+        <item name="calendar.event.trash"><![CDATA[انتقال به سطل اشغال]]></item>
+        <item name="calendar.event.trash.confirmMessage"><![CDATA[آیا واقعاً می خواهید این رویداد و همه تکرارهای آن را به سطل زباله منتقل کنید؟]]></item>
+        <item name="calendar.event.trash.reason"><![CDATA[دلیل (دلخواه)]]></item>
+        <item name="calendar.event.undecidedParticipants"><![CDATA[شرکت کنندگان بلاتکلیف]]></item>
+        <item name="calendar.event.undecidedParticipants.description"><![CDATA[این کاربران هنوز تصمیم قطعی نگرفته اند:]]></item>
+        <item name="calendar.event.unsetAsFeatured"><![CDATA[حذف علامت گذاری ویژه]]></item>
+        <item name="calendar.event.upcomingEvents"><![CDATA[رویدادهای آینده]]></item>
+        <item name="calendar.event.useAsPreset"><![CDATA[به عنوان پیش تنظیم استفاده کنید]]></item>
+        <item name="calendar.event.userEvents"><![CDATA[رویداد ها با {$user->username}]]></item>
+        <item name="calendar.event.weeklyView"><![CDATA[نمای هفته]]></item>
+        <item name="calendar.event.yearlyView"><![CDATA[نمای سال]]></item>
     </category>
     <category name="calendar.index">
-        <item name="calendar.index.stats"><![CDATA[Statistics]]></item>
+        <item name="calendar.index.stats"><![CDATA[امار]]></item>
         <item name="calendar.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{#$stats[authors]} Author{if $stats[authors] != 1}s{/if}</li>
-<li>{#$stats[events]} Event{if $stats[events] != 1}s{/if} ({#$stats[eventsPerDay]} Event{if $stats[eventsPerDay] != 1}s{/if} per Day)</li>
-<li>{#$stats[comments]} Comment{if $stats[comments] != 1}s{/if}</li>
+<li>{#$stats[authors]} Author{if $stats[نویسندگان] != 1}s{/if}</li>
+<li>{#$stats[events]} Event{if $stats[رویداد ها] != 1}s{/if} ({#$stats[eventsPerDay]} Event{if $stats[eventsPerDay] != 1}s{/if} per Day)</li>
+<li>{#$stats[comments]} Comment{if $stats[نظرات] != 1}s{/if}</li>
 </ul>]]></item>
     </category>
     <category name="filebase.acp.file">
-        <item name="filebase.acp.file.option.add"><![CDATA[Add Option Field]]></item>
-        <item name="filebase.acp.file.option.categoryIDs"><![CDATA[Categories]]></item>
-        <item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[The option field is only available for files in the selected categories. If no category is selected, the option field is available in all categories.]]></item>
-        <item name="filebase.acp.file.option.defaultValue"><![CDATA[Default Value]]></item>
-        <item name="filebase.acp.file.option.defaultValue.description"><![CDATA[Default option value suggested on first edit.]]></item>
-        <item name="filebase.acp.file.option.edit"><![CDATA[Edit Option Field]]></item>
-        <item name="filebase.acp.file.option.list"><![CDATA[Option Fields]]></item>
-        <item name="filebase.acp.file.option.optionType"><![CDATA[Option Type]]></item>
-        <item name="filebase.acp.file.option.optionType.URL"><![CDATA[Link]]></item>
-        <item name="filebase.acp.file.option.optionType.boolean"><![CDATA[Yes/No]]></item>
-        <item name="filebase.acp.file.option.optionType.boolean.no"><![CDATA[No]]></item>
-        <item name="filebase.acp.file.option.optionType.boolean.yes"><![CDATA[Yes]]></item>
-        <item name="filebase.acp.file.option.optionType.checkboxes"><![CDATA[Checkboxes]]></item>
-        <item name="filebase.acp.file.option.optionType.date"><![CDATA[Date]]></item>
-        <item name="filebase.acp.file.option.optionType.float"><![CDATA[Decimal]]></item>
+        <item name="filebase.acp.file.option.add"><![CDATA[افزودن فیلد گزینه]]></item>
+        <item name="filebase.acp.file.option.categoryIDs"><![CDATA[دسته بندی ها]]></item>
+        <item name="filebase.acp.file.option.categoryIDs.description"><![CDATA[فیلد گزینه فقط برای فایل‌های دسته‌های انتخابی موجود است. اگر هیچ دسته ای انتخاب نشده باشد، فیلد گزینه در همه دسته ها موجود است.]]></item>
+        <item name="filebase.acp.file.option.defaultValue"><![CDATA[مقدار پیش فرض]]></item>
+        <item name="filebase.acp.file.option.defaultValue.description"><![CDATA[مقدار گزینه پیش‌فرض در اولین ویرایش پیشنهاد شده است.]]></item>
+        <item name="filebase.acp.file.option.edit"><![CDATA[ویرایش فیلد گزینه]]></item>
+        <item name="filebase.acp.file.option.list"><![CDATA[گزینه های فیلد]]></item>
+        <item name="filebase.acp.file.option.optionType"><![CDATA[نوع گزینه]]></item>
+        <item name="filebase.acp.file.option.optionType.URL"><![CDATA[لینک]]></item>
+        <item name="filebase.acp.file.option.optionType.boolean"><![CDATA[بله خیر]]></item>
+        <item name="filebase.acp.file.option.optionType.boolean.no"><![CDATA[نه]]></item>
+        <item name="filebase.acp.file.option.optionType.boolean.yes"><![CDATA[بله]]></item>
+        <item name="filebase.acp.file.option.optionType.checkboxes"><![CDATA[چک باکس ها]]></item>
+        <item name="filebase.acp.file.option.optionType.date"><![CDATA[تاریخ]]></item>
+        <item name="filebase.acp.file.option.optionType.float"><![CDATA[اعشاری]]></item>
         <item name="filebase.acp.file.option.optionType.integer"><![CDATA[Integer]]></item>
         <item name="filebase.acp.file.option.optionType.message"><![CDATA[Multiline text (bbcode support)]]></item>
         <item name="filebase.acp.file.option.optionType.multiSelect"><![CDATA[Multi selection]]></item>
