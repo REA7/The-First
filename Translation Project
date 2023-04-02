@@ -308,119 +308,119 @@
         <item name="calendar.event.date.isParticipant.maybe"><![CDATA[شما هنوز به طور کامل به شرکت در این رویداد متعهد نشده اید.]]></item>
         <item name="calendar.event.date.isParticipant.no"><![CDATA[شما از شرکت در این رویداد خودداری کرده اید.]]></item>
         <item name="calendar.event.date.local"><![CDATA[زمان محلی]]></item>
-        <item name="calendar.event.date.next"><![CDATA[Next Repetition]]></item>
-        <item name="calendar.event.date.notification.mail.html"><![CDATA[<p>The event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> by <strong>{$author}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:</p>]]></item>
-        <item name="calendar.event.date.notification.mail.plaintext"><![CDATA[The event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] by {@$author} {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:]]></item>
-        <item name="calendar.event.date.notification.message"><![CDATA[Event <strong>{$eventDate->getTitle()}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}.]]></item>
-        <item name="calendar.event.date.notification.title"><![CDATA[Event Reminder]]></item>
-        <item name="calendar.event.date.overlapping"><![CDATA[These events take place during this period:]]></item>
-        <item name="calendar.event.date.participation"><![CDATA[Manage Participation]]></item>
-        <item name="calendar.event.date.participation.companions"><![CDATA[Companions]]></item>
-        <item name="calendar.event.date.participation.companions.error.exceededMaxCompanions"><![CDATA[You have exceeded the maximum number of companions.]]></item>
-        <item name="calendar.event.date.participation.decision"><![CDATA[Participation]]></item>
-        <item name="calendar.event.date.participation.decision.maybe"><![CDATA[Maybe]]></item>
-        <item name="calendar.event.date.participation.decision.no"><![CDATA[No]]></item>
-        <item name="calendar.event.date.participation.decision.yes"><![CDATA[Yes{if !$canParticipate} (not possible){/if}]]></item>
-        <item name="calendar.event.date.participation.invite"><![CDATA[Invite]]></item>
-        <item name="calendar.event.date.participation.invite.description"><![CDATA[You can invite additional users to this event. Separate multiple users with a comma.]]></item>
-        <item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[unknown]|count}The following users are unknown: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[unknown]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}The following users are already participants: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
-        <item name="calendar.event.date.participation.inviteUserGroup"><![CDATA[Invite User Group]]></item>
-        <item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[You can only invite user groups with up to {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} members.]]></item>
-        <item name="calendar.event.date.participation.inviteUsers"><![CDATA[Invite Users]]></item>
-        <item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[The following users were not found: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
-        <item name="calendar.event.date.participation.message"><![CDATA[Comment]]></item>
-        <item name="calendar.event.date.participation.message.description"><![CDATA[Optionally, you can type in a comment that will be displayed on the participants list.]]></item>
-        <item name="calendar.event.date.participation.notChangeable"><![CDATA[This event does not allow you to change your decision.]]></item>
-        <item name="calendar.event.date.participation.notification.mail.html"><![CDATA[<p>{@$authorList} now {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if} in the event <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
-        <item name="calendar.event.date.participation.notification.mail.plaintext"><![CDATA[{@$authorList} now {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if} in the event “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-        <item name="calendar.event.date.participation.notification.message"><![CDATA[<strong>{$author}</strong> now participates in the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.participation.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} now participate in the event <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
-        <item name="calendar.event.date.participation.notification.title"><![CDATA[New Participant]]></item>
-        <item name="calendar.event.date.participation.notification.title.stacked"><![CDATA[{#$count} new Participants]]></item>
-        <item name="calendar.event.date.participation.participate"><![CDATA[Participate]]></item>
-        <item name="calendar.event.date.participation.removeParticipant"><![CDATA[Remove Participant]]></item>
-        <item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[Do you really want to remove <span class="confirmationObject">{$participant->username}</span> from this event?]]></item>
-        <item name="calendar.event.date.participation.user"><![CDATA[Participants]]></item>
-        <item name="calendar.event.date.participation.user.description"><![CDATA[You can add additional users by specifying their username and selecting an option below.]]></item>
-        <item name="calendar.event.date.participation.user.error.alreadyParticipating"><![CDATA[“{$participant->username}” has already decided to participate.]]></item>
-        <item name="calendar.event.date.previous"><![CDATA[Previous Repetition]]></item>
-        <item name="calendar.event.date.repeat.byDay"><![CDATA[Day of Week]]></item>
-        <item name="calendar.event.date.repeat.byMonthDay"><![CDATA[Day of Month]]></item>
-        <item name="calendar.event.date.repeat.dayOffset.first"><![CDATA[First]]></item>
-        <item name="calendar.event.date.repeat.dayOffset.fourth"><![CDATA[Fourth]]></item>
-        <item name="calendar.event.date.repeat.dayOffset.last"><![CDATA[Last]]></item>
-        <item name="calendar.event.date.repeat.dayOffset.second"><![CDATA[Second]]></item>
-        <item name="calendar.event.date.repeat.dayOffset.third"><![CDATA[Third]]></item>
-        <item name="calendar.event.date.repeat.description"><![CDATA[Repeat this event based on a pattern.]]></item>
-        <item name="calendar.event.date.repeat.enable"><![CDATA[Enable Repetition]]></item>
-        <item name="calendar.event.date.repeat.end.count"><![CDATA[Number of Repetitions]]></item>
-        <item name="calendar.event.date.repeat.end.date"><![CDATA[Date]]></item>
-        <item name="calendar.event.date.repeat.end.date.error.invalid"><![CDATA[The entered end date is invalid. It must be after the start date.]]></item>
-        <item name="calendar.event.date.repeat.end.type"><![CDATA[Repetition End]]></item>
-        <item name="calendar.event.date.repeat.end.type.count"><![CDATA[Number of repetitions]]></item>
-        <item name="calendar.event.date.repeat.end.type.date"><![CDATA[Date]]></item>
-        <item name="calendar.event.date.repeat.end.type.unlimited"><![CDATA[Never]]></item>
-        <item name="calendar.event.date.repeat.interval"><![CDATA[Interval]]></item>
-        <item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[Repeat every day(s)]]></item>
-        <item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[Repeat every month(s)]]></item>
-        <item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[Repeat every week(s)]]></item>
-        <item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[Repeat every year(s)]]></item>
-        <item name="calendar.event.date.repeat.type"><![CDATA[Type]]></item>
-        <item name="calendar.event.date.repeat.type.daily"><![CDATA[Daily]]></item>
-        <item name="calendar.event.date.repeat.type.monthlyByDayOfMonth"><![CDATA[Monthly (day of month)]]></item>
-        <item name="calendar.event.date.repeat.type.monthlyByDayOfWeek"><![CDATA[Monthly (week day)]]></item>
-        <item name="calendar.event.date.repeat.type.weekly"><![CDATA[Weekly]]></item>
-        <item name="calendar.event.date.repeat.type.yearlyByDayOfMonth"><![CDATA[Yearly (day of month)]]></item>
-        <item name="calendar.event.date.repeat.type.yearlyByDayOfWeek"><![CDATA[Yearly (day of week)]]></item>
-        <item name="calendar.event.date.showAll"><![CDATA[[Display All Events]]]></item>
-        <item name="calendar.event.date.start"><![CDATA[Start]]></item>
-        <item name="calendar.event.date.start.error.invalid"><![CDATA[The entered start date is invalid.]]></item>
-        <item name="calendar.event.date.start.error.startsBeforePreviousEventDate"><![CDATA[This repetition of the event cannot start before the end of the previous repetition.]]></item>
-        <item name="calendar.event.date.start.local"><![CDATA[Start (Local Time)]]></item>
-        <item name="calendar.event.date.timezone"><![CDATA[Timezone]]></item>
-        <item name="calendar.event.day.count"><![CDATA[{#$eventCount} event{if $eventCount != 1}s{/if}]]></item>
-        <item name="calendar.event.delete"><![CDATA[Delete]]></item>
-        <item name="calendar.event.delete.confirmMessage"><![CDATA[Do you really want to delete this event and all of its repetitions?]]></item>
-        <item name="calendar.event.disable"><![CDATA[Disable]]></item>
-        <item name="calendar.event.edit"><![CDATA[Edit Event]]></item>
-        <item name="calendar.event.enable"><![CDATA[Approve]]></item>
-        <item name="calendar.event.enableComments"><![CDATA[Enable comments]]></item>
-        <item name="calendar.event.enableComments.description"><![CDATA[Allows users to comment on this event.]]></item>
-        <item name="calendar.event.eventComments"><![CDATA[{@$eventDate->comments|shortUnit} Comment{if $eventDate->comments != 1}s{/if}]]></item>
-        <item name="calendar.event.eventParticipations"><![CDATA[Event Participation]]></item>
-        <item name="calendar.event.eventParticipations.decision.invited"><![CDATA[Invited]]></item>
-        <item name="calendar.event.eventParticipations.decision.maybe"><![CDATA[Undecided]]></item>
-        <item name="calendar.event.eventParticipations.decision.no"><![CDATA[Cancelled]]></item>
-        <item name="calendar.event.eventParticipations.decision.yes"><![CDATA[Participating]]></item>
-        <item name="calendar.event.eventThread.boardID"><![CDATA[Forum]]></item>
-        <item name="calendar.event.eventThread.boardID.description"><![CDATA[Discussion threads will be created in the selected forum.]]></item>
+        <item name="calendar.event.date.next"><![CDATA[تکرار بعدی]]></item>
+        <item name="calendar.event.date.notification.mail.html"><![CDATA[<p>رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> با <strong>{$author}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:</p>]]></item>
+        <item name="calendar.event.date.notification.mail.plaintext"><![CDATA[رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] با {@$author} {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}:]]></item>
+        <item name="calendar.event.date.notification.message"><![CDATA[رویداد <strong>{$eventDate->getTitle()}</strong> {if $eventDate->startTime < TIME_NOW}started{else}starts{/if} {dateInterval end=$eventDate->startTime full=true format='sentence'}.]]></item>
+        <item name="calendar.event.date.notification.title"><![CDATA[یاد اور رویداد]]></item>
+        <item name="calendar.event.date.overlapping"><![CDATA[این رویدادها در این دوره اتفاق می افتد:]]></item>
+        <item name="calendar.event.date.participation"><![CDATA[مدیریت تکرار]]></item>
+        <item name="calendar.event.date.participation.companions"><![CDATA[همراهان]]></item>
+        <item name="calendar.event.date.participation.companions.error.exceededMaxCompanions"><![CDATA[شما از حداکثر تعداد همراهان بیشتر شده اید.]]></item>
+        <item name="calendar.event.date.participation.decision"><![CDATA[مشارکت]]></item>
+        <item name="calendar.event.date.participation.decision.maybe"><![CDATA[شاید]]></item>
+        <item name="calendar.event.date.participation.decision.no"><![CDATA[نه]]></item>
+        <item name="calendar.event.date.participation.decision.yes"><![CDATA[بله{if !$canParticipate} (ممکن نیست){/if}]]></item>
+        <item name="calendar.event.date.participation.invite"><![CDATA[دعوت]]></item>
+        <item name="calendar.event.date.participation.invite.description"><![CDATA[می توانید کاربران بیشتری را به این رویداد دعوت کنید. چند کاربر را با کاما از هم جدا کنید.]]></item>
+        <item name="calendar.event.date.participation.invite.errors"><![CDATA[{if $errors[ناشناخته]|count}The following users are unknown: {implode from=$errors[unknown] item=user}{$user}{/implode}.{/if}{if $errors[ناشناخته]|count && $errors[participant]|count}<br />{/if}{if $errors[participant]|count}The following users are already participants: {implode from=$errors[participant] item=user}{$user}{/implode}.{/if}]]></item>
+        <item name="calendar.event.date.participation.inviteUserGroup"><![CDATA[دعوت کاربر گروه]]></item>
+        <item name="calendar.event.date.participation.inviteUserGroup.description"><![CDATA[شما فقط می‌توانید گروه‌های کاربری را با حداکثر دعوت کنید {#CALENDAR_EVENT_INVITE_GROUP_MAX_SIZE} members.]]></item>
+        <item name="calendar.event.date.participation.inviteUsers"><![CDATA[دعوت کاربران]]></item>
+        <item name="calendar.event.date.participation.inviteUsers.error.notFound"><![CDATA[کاربران زیر یافن نشدند: {implode from=$unknownUsers item=unknownUser}{$unknownUser}{/implode}]]></item>
+        <item name="calendar.event.date.participation.message"><![CDATA[نظر]]></item>
+        <item name="calendar.event.date.participation.message.description"><![CDATA[به صورت اختیاری، می توانید نظری را تایپ کنید که در لیست شرکت کنندگان نمایش داده می شود.]]></item>
+        <item name="calendar.event.date.participation.notChangeable"><![CDATA[این رویداد به شما اجازه نمی دهد تصمیم خود را تغییر دهید.]]></item>
+        <item name="calendar.event.date.participation.notification.mail.html"><![CDATA[<p>{@$authorList} الان {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if}در این رویداد <a href="{$eventDate->getLink()}">{$eventDate->getTitle()}</a> ({@$eventDate->getFormattedTimeFrame()}):</p>]]></item>
+        <item name="calendar.event.date.participation.notification.mail.plaintext"><![CDATA[{@$authorList} الان {if $count == 1 && $guestTimesTriggered < 2 && (!$event->getAuthor()->userID || $guestTimesTriggered == 0)}participates{else}participate{/if} در این رویداد “{@$eventDate->getTitle()}” [URL:{@$eventDate->getLink()}] ({@$eventDate->getFormattedTimeFrame()}){if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+        <item name="calendar.event.date.participation.notification.message"><![CDATA[<strong>{$author}</strong> اکنون در این رویداد شرکت می کند <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.participation.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} اکنون در این رویداد شرکت کنید <strong>{$eventDate->getTitle()}</strong> ({$eventDate->getFormattedTimeFrame()}).]]></item>
+        <item name="calendar.event.date.participation.notification.title"><![CDATA[شرکت کننده جدید]]></item>
+        <item name="calendar.event.date.participation.notification.title.stacked"><![CDATA[{#$count} شرکت کننده جدید]]></item>
+        <item name="calendar.event.date.participation.participate"><![CDATA[شرکت کردن]]></item>
+        <item name="calendar.event.date.participation.removeParticipant"><![CDATA[حذف شرکت کننده]]></item>
+        <item name="calendar.event.date.participation.removeParticipant.confirmMessage"><![CDATA[آیا واقعاً می خواهید  <span class="confirmationObject">{$participant->username}</span>را از این رویداد حذف کنید؟]]></item>
+        <item name="calendar.event.date.participation.user"><![CDATA[شرکت کنندگان]]></item>
+        <item name="calendar.event.date.participation.user.description"><![CDATA[شما می توانید با تعیین نام کاربری و انتخاب گزینه زیر، کاربران دیگری را اضافه کنید.]]></item>
+        <item name="calendar.event.date.participation.user.error.alreadyParticipating"><![CDATA[“{$participant->username}”قبلا تصمیم به شرکت گرفته است.]]></item>
+        <item name="calendar.event.date.previous"><![CDATA[تکرار قبلی]]></item>
+        <item name="calendar.event.date.repeat.byDay"><![CDATA[روز از هفته]]></item>
+        <item name="calendar.event.date.repeat.byMonthDay"><![CDATA[روز از ماه]]></item>
+        <item name="calendar.event.date.repeat.dayOffset.first"><![CDATA[اول]]></item>
+        <item name="calendar.event.date.repeat.dayOffset.fourth"><![CDATA[چهارم]]></item>
+        <item name="calendar.event.date.repeat.dayOffset.last"><![CDATA[اخر]]></item>
+        <item name="calendar.event.date.repeat.dayOffset.second"><![CDATA[دوم]]></item>
+        <item name="calendar.event.date.repeat.dayOffset.third"><![CDATA[سوم]]></item>
+        <item name="calendar.event.date.repeat.description"><![CDATA[این رویداد را بر اساس یک الگو تکرار کنید.]]></item>
+        <item name="calendar.event.date.repeat.enable"><![CDATA[تکرار را فعال کنید]]></item>
+        <item name="calendar.event.date.repeat.end.count"><![CDATA[تعداد تکرار]]></item>
+        <item name="calendar.event.date.repeat.end.date"><![CDATA[تاریخ]]></item>
+        <item name="calendar.event.date.repeat.end.date.error.invalid"><![CDATA[تاریخ پایان وارد شده نامعتبر است. باید بعد از تاریخ شروع باشد.]]></item>
+        <item name="calendar.event.date.repeat.end.type"><![CDATA[پایان تکرار]]></item>
+        <item name="calendar.event.date.repeat.end.type.count"><![CDATA[تعداد تکرار]]></item>
+        <item name="calendar.event.date.repeat.end.type.date"><![CDATA[تاریخ]]></item>
+        <item name="calendar.event.date.repeat.end.type.unlimited"><![CDATA[هیچ وقت]]></item>
+        <item name="calendar.event.date.repeat.interval"><![CDATA[فاصله]]></item>
+        <item name="calendar.event.date.repeat.interval.daily.description"><![CDATA[هر روز تکرار کن]]></item>
+        <item name="calendar.event.date.repeat.interval.monthly.description"><![CDATA[هر ماه تکرار کن]]></item>
+        <item name="calendar.event.date.repeat.interval.weekly.description"><![CDATA[هر هفته تکرار کن]]></item>
+        <item name="calendar.event.date.repeat.interval.yearly.description"><![CDATA[هر سال تکرار کن]]></item>
+        <item name="calendar.event.date.repeat.type"><![CDATA[نوع]]></item>
+        <item name="calendar.event.date.repeat.type.daily"><![CDATA[روزانه]]></item>
+        <item name="calendar.event.date.repeat.type.monthlyByDayOfMonth"><![CDATA[ماهانه (روز از ماه)]]></item>
+        <item name="calendar.event.date.repeat.type.monthlyByDayOfWeek"><![CDATA[ماهانه (روز هفته)]]></item>
+        <item name="calendar.event.date.repeat.type.weekly"><![CDATA[هفتگی]]></item>
+        <item name="calendar.event.date.repeat.type.yearlyByDayOfMonth"><![CDATA[سالانه (روز از ماه)]]></item>
+        <item name="calendar.event.date.repeat.type.yearlyByDayOfWeek"><![CDATA[سالانه (روز از هفته)]]></item>
+        <item name="calendar.event.date.showAll"><![CDATA[[نمایش همه رویدادها]]]></item>
+        <item name="calendar.event.date.start"><![CDATA[شروع]]></item>
+        <item name="calendar.event.date.start.error.invalid"><![CDATA[تاریخ شروع وارد شده نا معتبر است]]></item>
+        <item name="calendar.event.date.start.error.startsBeforePreviousEventDate"><![CDATA[این تکرار رویداد نمی تواند قبل از پایان تکرار قبلی شروع شود.]]></item>
+        <item name="calendar.event.date.start.local"><![CDATA[Start (زمان محلی)]]></item>
+        <item name="calendar.event.date.timezone"><![CDATA[منطقه زمانی]]></item>
+        <item name="calendar.event.day.count"><![CDATA[{#$eventCount} رویداد{if $eventCount != 1}s{/if}]]></item>
+        <item name="calendar.event.delete"><![CDATA[حذف]]></item>
+        <item name="calendar.event.delete.confirmMessage"><![CDATA[آیا واقعاً می خواهید این رویداد و همه تکرارهای آن را حذف کنید؟]]></item>
+        <item name="calendar.event.disable"><![CDATA[غیر فعال کردن]]></item>
+        <item name="calendar.event.edit"><![CDATA[اصلاح رویداد]]></item>
+        <item name="calendar.event.enable"><![CDATA[تایید]]></item>
+        <item name="calendar.event.enableComments"><![CDATA[نظر را فعال کنید]]></item>
+        <item name="calendar.event.enableComments.description"><![CDATA[به کاربران اجازه می دهد در مورد این رویداد نظر دهند.]]></item>
+        <item name="calendar.event.eventComments"><![CDATA[{@$eventDate->comments|shortUnit}نظر{if $eventDate->comments != 1}s{/if}]]></item>
+        <item name="calendar.event.eventParticipations"><![CDATA[شرکت در رویداد]]></item>
+        <item name="calendar.event.eventParticipations.decision.invited"><![CDATA[دعوت]]></item>
+        <item name="calendar.event.eventParticipations.decision.maybe"><![CDATA[تصمیم نگرفتم]]></item>
+        <item name="calendar.event.eventParticipations.decision.no"><![CDATA[لغو شد]]></item>
+        <item name="calendar.event.eventParticipations.decision.yes"><![CDATA[شرکت کردن]]></item>
+        <item name="calendar.event.eventThread.boardID"><![CDATA[انجمن]]></item>
+        <item name="calendar.event.eventThread.boardID.description"><![CDATA[موضوعات بحث در انجمن انتخاب شده ایجاد خواهد شد.]]></item>
         <item name="calendar.event.eventThread.info"><![CDATA[{#$eventThread->replies} {if $eventThread->replies == 1}reply{else}replies{/if}{if $eventThread->replies > 0}, last: {@$eventThread->lastPostTime|time}{/if}]]></item>
-        <item name="calendar.event.eventThread.message"><![CDATA[<p>{@$event->username} started a new event:<br>[event]{@$event->getFirstEventDate()->eventDateID}[/event]</p>
+        <item name="calendar.event.eventThread.message"><![CDATA[<p>{@$event->username} شروع یک رویداد جدید:<br>[event]{@$event->getFirstEventDate()->eventDateID}[/event]</p>
 <woltlab-quote>{@$event->message}</woltlab-quote>]]></item>
         <item name="calendar.event.eventThread.subject"><![CDATA[{@$event->subject} ({@$event->getFirstEventDate()->getFormattedTimeFrame($__language, true)})]]></item>
         <item name="calendar.event.eventViews"><![CDATA[{@$event->views|shortUnit} View{if $event->views != 1}s{/if}]]></item>
-        <item name="calendar.event.events"><![CDATA[Events]]></item>
-        <item name="calendar.event.eventsInfoWindow"><![CDATA[Multiple Events]]></item>
-        <item name="calendar.event.featured"><![CDATA[Featured]]></item>
-        <item name="calendar.event.generalInformation"><![CDATA[General]]></item>
-        <item name="calendar.event.import"><![CDATA[Import Events]]></item>
-        <item name="calendar.event.import.description"><![CDATA[Supports import of events using the vCalendar or iCalendar exchange format.]]></item>
-        <item name="calendar.event.import.importURL"><![CDATA[Download File (URL)]]></item>
-        <item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[An unknown error occurred during the download.]]></item>
-        <item name="calendar.event.import.success"><![CDATA[{#$success} event{if $success != 1}s{/if} {if $success == 1}has{else}have{/if} been imported.]]></item>
-        <item name="calendar.event.import.upload"><![CDATA[Upload file]]></item>
-        <item name="calendar.event.import.upload.error.uploadFailed"><![CDATA[An unknown error occurred during the upload.]]></item>
-        <item name="calendar.event.information"><![CDATA[Details]]></item>
-        <item name="calendar.event.invitedParticipants"><![CDATA[Invited Participants]]></item>
-        <item name="calendar.event.invitedParticipants.description"><![CDATA[These users have been invited:]]></item>
-        <item name="calendar.event.like.notification.message"><![CDATA[<strong>{$author}</strong> reacted to your event <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} reacted to your event <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-        <item name="calendar.event.like.notification.title"><![CDATA[Reaction to your event]]></item>
-        <item name="calendar.event.like.notification.title.stacked"><![CDATA[{#$count} users reacted to your event]]></item>
-        <item name="calendar.event.log.trash.summary"><![CDATA[Event was deleted by {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if} {if $additionalData[reason]}for the following reason: {$additionalData[reason]}{/if}. ({@$time|time})]]></item>
-        <item name="calendar.event.map"><![CDATA[Location]]></item>
-        <item name="calendar.event.message"><![CDATA[Description]]></item>
-        <item name="calendar.event.moderation.info"><![CDATA[Newly created events will remain inaccessible until approved by a moderator.]]></item>
+        <item name="calendar.event.events"><![CDATA[رویداد ها]]></item>
+        <item name="calendar.event.eventsInfoWindow"><![CDATA[Mرویدادهای متعدد]]></item>
+        <item name="calendar.event.featured"><![CDATA[ویژه]]></item>
+        <item name="calendar.event.generalInformation"><![CDATA[عمومی]]></item>
+        <item name="calendar.event.import"><![CDATA[Import رویداد ها]]></item>
+        <item name="calendar.event.import.description"><![CDATA[از واردات رویدادها با استفاده از فرمت تبادل vCalendar یا iCalendar پشتیبانی می کند.]]></item>
+        <item name="calendar.event.import.importURL"><![CDATA[دانلود فایل (URL)]]></item>
+        <item name="calendar.event.import.importURL.error.downloadFailed"><![CDATA[یک خطای ناشناخته در حین دانلود روی داد.]]></item>
+        <item name="calendar.event.import.success"><![CDATA[{#$success} رویداد{if $success != 1}s{/if} {if $success == 1}has{else}have{/if} been imported.]]></item>
+        <item name="calendar.event.import.upload"><![CDATA[بارگذاری فایل]]></item>
+        <item name="calendar.event.import.upload.error.uploadFailed"><![CDATA[یک خطای ناشناخته در حین آپلود روی داد.]]></item>
+        <item name="calendar.event.information"><![CDATA[جزئیات]]></item>
+        <item name="calendar.event.invitedParticipants"><![CDATA[شرکت کنندگان دعوت شده]]></item>
+        <item name="calendar.event.invitedParticipants.description"><![CDATA[این کاربران دعوت شده اند:]]></item>
+        <item name="calendar.event.like.notification.message"><![CDATA[<strong>{$author}</strong> به رویداد شما واکنش نشان داد <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} rبه رویداد شما واکنش نشان داد <strong>{$event->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+        <item name="calendar.event.like.notification.title"><![CDATA[واکنش به رویداد شما]]></item>
+        <item name="calendar.event.like.notification.title.stacked"><![CDATA[{#$count} کاربران به رویداد شما واکنش نشان دادند]]></item>
+        <item name="calendar.event.log.trash.summary"><![CDATA[رویداد حذف شد به وسیله {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if} {if $additionalData[reason]}for the following reason: {$additionalData[reason]}{/if}. ({@$time|time})]]></item>
+        <item name="calendar.event.map"><![CDATA[موقعیت مکانی]]></item>
+        <item name="calendar.event.message"><![CDATA[شرح]]></item>
+        <item name="calendar.event.moderation.info"><![CDATA[رویدادهای ایجاد شده جدید تا زمانی که توسط ناظر تأیید نشود، غیرقابل دسترسی خواهند بود.]]></item>
         <item name="calendar.event.moderation.redirect"><![CDATA[Your event has been created and will be displayed once approved.]]></item>
         <item name="calendar.event.monthlyView"><![CDATA[Month View]]></item>
         <item name="calendar.event.noParticipants"><![CDATA[Non-Participants]]></item>
