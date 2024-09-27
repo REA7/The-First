@@ -3,7 +3,6 @@
 #include <vector>
 
 using namespace std;
-
 struct Student {
     string name;
     vector<float> grades;
